@@ -6,13 +6,8 @@ data = pandas.read_csv('train.csv', index_col="PassengerId")
 
 prices = data.sort_values('Fare')
 prices = prices["Fare"].value_counts()
-##prices = data['Fare']
-#prices = prices.sort_values()
 count = prices.tolist()
 print(count[0])
-#prices = prices.keys().sort_values()
-
-#print(len(prices))
 
 x = np.linspace( 0, count[0],  len(count))
 y = prices.keys()
