@@ -1,9 +1,6 @@
 import statistics
-
 import numpy as np
-
 import statistics
-
 import pandas as pd
 
 data = pd.read_csv('train.csv', index_col='PassengerId')
